@@ -1,11 +1,14 @@
 # Site settings
-title: Clean Blog
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+title: FRIENDS
+tagline: I'll be there for you
+description: All FRIENDS episodes will be listed here.
+header-img: img/home1.jpg
+email: friends@ibtfu.com
+copyright_name: FRIENDS, All Rights Reserved
+#description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: ""
-url: "http://ibftu.com"
+#url: "http://www.ibtfu.com"
+url: "http://localhost:4000"
 twitter_username: SBootstrap
 github_username:  davidtmiller
 facebook_username:  StartBootstrap
@@ -18,8 +21,8 @@ email_username:  your-email@yourdomain.com
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
-paginate: 5
+permalink: :categories/:title
+#paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed]
+gems: [jekyll-paginate, jekyll-feed, jekyll-admin]

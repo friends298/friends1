@@ -5,3 +5,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll"
 end
+
+gem 'jekyll-admin', group: :jekyll_plugins

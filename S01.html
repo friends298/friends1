@@ -1,0 +1,25 @@
+---
+layout: page
+title: Season 1
+description: ''
+---
+<p>The first season of Friends, an American sitcom created by David Crane and Marta Kauffman, premiered on NBC on September 22, 1994. Friends was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The season contains 24 episodes and concluded airing on May 18, 1995.</p>
+<h2>Reception</h2>
+<p>Early reviews of the series were mixed. Tom Feran of The Plain Dealer wrote that the series traded "vaguely and less successfully on the hanging-out style of Seinfeld", while Ann Hodges of the Houston Chronicle called it "the new Seinfeld wannabe, but it will never be as funny as Seinfeld." In the Los Angeles Daily News, Ray Richmond named the series as "one of the brighter comedies of the new season", and the Los Angeles Times called it "flat-out the best comedy series of the new season". Chicago Sun-Times' Ginny Holbert found Joey and Rachel's characteristics to be underdeveloped, while Richmond commended the cast as a "likeable, youth ensemble" with "good chemistry" Robert Bianco of USA Today was complimentary of Schwimmer, calling him "terrific". He also praised the female leads, but was concerned that Perry's role as Chandler was "undefined" and that LeBlanc was "relying too much on the same brain-dead stud routine that was already tired the last two times he tried it". The authors of Friends Like Us: The Unofficial Guide to Friends thought that the cast was "trying just a little too hard", in particular Perry and Schwimmer.</p>
+<h2>Episodes</h2>
+
+{% for post in site.categories.S01 reversed %}
+	<a href="{{site.url}}{{post.url}}" style="text-decoration:none">
+	<div style="display:table;width:100%">
+		<div style="display:table-cell;vertical-align:middle;background: url('https://thumb.oloadcdn.net/splash/{{ post.oloadid }}/{{ post.header-img }}.jpg') center center no-repeat;text-align:center;font-size:30px;color:white;font-family:friends" class="img-td">
+			{{ post.title }}
+		</div>
+	</div>
+	</a>
+	<hr>
+{% endfor %}
+<ul class="pager">
+    <li class="next">
+        <a href="{{site.url}}/S02.html" data-toggle="tooltip" data-placement="top" title="Season 2">Next Season &rarr;</a>
+    </li>
+</ul>

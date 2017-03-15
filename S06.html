@@ -1,0 +1,26 @@
+---
+layout: page
+title: Season 6
+description: ''
+---
+<p>The sixth season of Friends, an American sitcom created by David Crane and Marta Kauffman, premiered on NBC on September 23, 1999. Friends was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The season contains 25 episodes and concluded airing on May 18, 2000.</p>
+<h2>Episodes</h2>
+
+{% for post in site.categories.S06 reversed %}
+<a href="{{site.url}}{{post.url}}" style="text-decoration:none">
+	<div style="display:table;width:100%">
+		<div style="display:table-cell;vertical-align:middle;background: url('https://thumb.oloadcdn.net/splash/{{ post.oloadid }}/{{ post.header-img }}.jpg') center center no-repeat;text-align:center;font-size:30px;color:white;font-family:friends" class="img-td">
+			{{ post.title }}
+		</div>
+	</div>
+</a>
+	<hr>
+{% endfor %}
+<ul class="pager">
+	<li class="previous">
+        <a href="{{ site.url }}/S05.html" data-toggle="tooltip" data-placement="top" title="Season 5">&larr; Previous Season</a>
+    </li>
+    <li class="next">
+        <a href="{{ site.url }}/S07.html" data-toggle="tooltip" data-placement="top" title="Season 7">Next Season &rarr;</a>
+    </li>
+</ul>

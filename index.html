@@ -1,36 +1,78 @@
 ---
 layout: page
-description: "A Clean Blog Theme by Start Bootstrap"
+title: "I'll be there for you"
+description: "All FRIENDS episodes will be listed here"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<table class="table">
+	<tr style="background-color:#004391;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S01.html';">
+		<td style="background: url('{{ site.url }}/img/S01.png') center center no-repeat" class="img-td">
+		</td>
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 1
+		</td>
+	</tr>
+	<tr style="background-color:#961C1B;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S02.html';">
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 2
+		</td>
+		<td style="background: url('{{ site.url }}/img/S02.png') center center no-repeat" class="img-td">
+		</td>
+	</tr>
+	<tr style="background-color:#005F6B;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S03.html';">
+		<td style="background: url('{{ site.url }}/img/S03.png') center center no-repeat" class="img-td">
+		</td>
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 3
+		</td>
+	</tr>
+	<tr style="background-color:#F66F37;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S04.html';">
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 4
+		</td>
+		<td style="background: url('{{ site.url }}/img/S04.png') center center no-repeat" class="img-td">
+		</td>
+	</tr>
+	<tr style="background-color:#723A9A;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S05.html';">
+		<td style="background: url('{{ site.url }}/img/S05.png') center center no-repeat" class="img-td">
+		</td>
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 5
+		</td>
+	</tr>
+	<tr style="background-color:#046158;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S06.html';">
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 6
+		</td>
+		<td style="background: url('{{ site.url }}/img/S06.png') center center no-repeat" class="img-td">
+		</td>
+	</tr>
+	<tr style="background-color:#9C2A61;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S07.html';">
+		<td style="background: url('{{ site.url }}/img/S07.png') center center no-repeat" class="img-td">
+		</td>
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 7
+		</td>
+	</tr>
+	<tr style="background-color:#01617B;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S08.html';">
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 8
+		</td>
+		<td style="background: url('{{ site.url }}/img/S08.png') center center no-repeat" class="img-td">
+		</td>
+	</tr>
+	<tr style="background-color:#ED9121;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S09.html';">
+		<td style="background: url('{{ site.url }}/img/S09.png') center center no-repeat" class="img-td">
+		</td>
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 9
+		</td>
+	</tr>
+	<tr style="background-color:#A4273E;height:400px;cursor:pointer" onclick="window.location='{{site.url}}/S10.html';">
+		<td valign="center" style="text-align:center;font-size:30px;color:white;font-family:friends">
+			Season 10
+		</td>
+		<td style="background: url('{{ site.url }}/img/S10.png') center center no-repeat" class="img-td">
+		</td>
+	</tr>
+</table>
