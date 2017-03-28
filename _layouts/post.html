@@ -24,19 +24,14 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
+				
 				<ul class="pager">
 					<li class="previous">
 						<a href="{{ site.url }}/{{ page.categories }}.html" data-toggle="tooltip" data-placement="top" title="">&larr; Go to Season Page</a>
 					</li>
 				</ul>
 				
-				<h2>Directed By</h2>
-				<p>{{ page.directed }}</p>
-				<h2>Written By</h2>
-				<p>{{ page.written }}</p>
-				<h2>Story</h2>
-				<p>{{ page.Story }}</p>
+				{{ content }}
 				
 				<div class="panel with-nav-tabs panel-default">
 					<div class="panel-heading">
@@ -79,7 +74,7 @@ layout: default
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Episode &rarr;</a>
                     </li>
                     {% endif %}
-				</ul>
+		</ul>
             </div>
         </div>
     </div>
