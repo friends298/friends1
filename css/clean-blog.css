@@ -423,3 +423,8 @@ body {
             background-color: buttonface;
             color: buttontext;
 }
+
+h2 {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 3px;	
+}
