@@ -67,6 +67,7 @@
 				type: 'HEAD',
 				url: $(this).attr("href"),
 				error: function() {
+					console.log($(this).attr("href"));
 		  			$(this).css("color", "red");
 				}
 	  		});
