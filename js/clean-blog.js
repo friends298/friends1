@@ -1056,3 +1056,28 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+$(document).ready(function(){
+	var elements = document.getElementsByTagName("a");
+	for(var i = 0; i < elements.length; i++){
+   		//do something to each div like
+		UrlExists(elements[i].href, function(status){
+			if (status === 404){
+				elements[i].style.color = "red";
+			}
+		});
+   		//elements[i].innerHTML = "something new...";
+	}
+});
+
+function UrlExists(url, cb){
+    jQuery.ajax({
+        url:      url,
+        dataType: 'text',
+        type:     'GET',
+        complete:  function(xhr){
+            if(typeof cb === 'function')
+               cb.apply(this, [xhr.status]);
+        }
+    });
+}
