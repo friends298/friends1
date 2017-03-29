@@ -62,23 +62,25 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".contentclass a").each(function(i){
-			UrlExists($(this).attr('href'), function(status){
-				if (status === 404){
+			urlExists($(this).href, function(exists){
+				console.log($(this).href+"--"+exists);
+			  	if (exists !== 404){
 					$(this).attr('style', 'color:red');
 				}
 			});
 		});
 	});
 
-	function UrlExists(url, cb){
-		jQuery.ajax({
-			url:      url,
-			dataType: 'text',
-			type:     'GET',
-			complete:  function(xhr){
-				if(typeof cb === 'function')
-				   cb.apply(this, [xhr.status]);
-			}
-		});
+	function urlExists(url, callback){
+	  $.ajax({
+		type: 'HEAD',
+		url: url,
+		success: function(){
+		  callback(true);
+		},
+		error: function() {
+		  callback(false);
+		}
+	  });
 	}
 </script>
