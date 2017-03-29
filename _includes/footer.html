@@ -62,13 +62,13 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".contentclass a").each(function(i){
+			var x = $(this);
 			$.ajax({
 				type: 'HEAD',
-				url: $(this).attr("href"),
+				url: x.attr("href"),
 				error: function() {
-					console.log(this.href);
-					console.log($(this).attr("href")); 
-		  			$(this).css("color", "red");
+					console.log(x.attr("href")); 
+		  			x.css("color", "red");
 				}
 	  		});
 		});
