@@ -428,3 +428,15 @@ h2 {
 	border-bottom: 1px solid #cccccc;
 	padding-bottom: 3px;	
 }
+
+ /* unvisited link */
+.contentclass a:link {
+    color: black;
+	text-decoration: none;
+}
+
+/* mouse over link */
+.contentclass a:hover {
+    color: #692f7b;
+	text-decoration: underline;
+}
