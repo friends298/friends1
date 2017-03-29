@@ -62,7 +62,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".contentclass a").each(function(i){
-			UrlExists(this.href, function(status){
+			UrlExists($(this).attr('href'), function(status){
 				if (status === 404){
 					$(this).attr('style', 'color:red');
 				}
