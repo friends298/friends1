@@ -62,7 +62,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".contentclass a").each(function(i){
-			console.log($(this).attr("href")+"--"+this.href);)
+			console.log($(this).attr("href")+"--"+this.href);
 			$.ajax({
 				type: 'HEAD',
 				url: $(this).attr("href"),
