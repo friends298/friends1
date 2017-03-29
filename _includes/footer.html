@@ -62,27 +62,15 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".contentclass a").each(function(i){
-			console.log($(this).attr("href")+"--"+this.href);
+			//console.log($(this).attr("href")+"--"+this.href);
 			$.ajax({
 				type: 'HEAD',
 				url: $(this).attr("href"),
 				error: function() {
-		  			$(this).attr('style', 'color:red');
+		  			$(this).css("color", "red");
 				}
 	  		});
 		});
 	});
 
-	function urlExists(url, callback){
-	  $.ajax({
-		type: 'HEAD',
-		url: url,
-		success: function(){
-		  callback(true);
-		},
-		error: function() {
-		  callback(false);
-		}
-	  });
-	}
 </script>
