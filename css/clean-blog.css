@@ -430,7 +430,7 @@ h2 {
 }
 
  /* unvisited link */
-.contentclass a:link {
+.contentclass a {
     color: #0366d6;
     text-decoration: none;
 }
