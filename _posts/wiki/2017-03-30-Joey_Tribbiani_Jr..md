@@ -3,6 +3,13 @@ title: Joey Tribbiani Jr.
 category: wiki
 layout: wiki
 ---
+<table style="margin:auto; border-collapse:collapse; border-style:none; background-color:transparent;" class="cquote">
+<tr>
+<td style="vertical-align: top; width: 20px; color:#B2B7F2;font-size:35px;font-family:&#39;Times New Roman&#39;,serif;font-weight:bold;text-align:left;padding:10px 10px;"> “
+</td><td style="vertical-align: top; padding:4px 10px;"> <center><b><a href="/wiki/Running_Gags#Joey" title="Running Gags">How you doin'?</a></b></center>
+</td><td style="vertical-align: bottom; width: 20px; color:#B2B7F2;font-size:36px;font-family:&#39;Times New Roman&#39;,serif;font-weight:bold;text-align:right;padding:10px 10px;"> ”
+</td></tr>
+</table>
 <p><b>Joseph Francis "Joey" Tribbiani Jr. </b>is a fictional character on the popular American television sitcom <i><a href="/wiki/Friends" title="Friends">Friends</a></i> (1994–2004), and the title character in the spin-off, <i><a href="/wiki/Joey_(TV_series)" title="Joey (TV series)" class="mw-redirect">Joey</a></i> (2004–2006). He is played by <a href="/wiki/Matt_LeBlanc" title="Matt LeBlanc">Matt LeBlanc</a>
 </p>
 <nav id="toc" class="toc" data-loaded="false"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">[<a href="#" class="internal" id="togglelink" data-show="show" data-hide="hide">show</a>]</span></div><ol></ol></nav>
