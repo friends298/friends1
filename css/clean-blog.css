@@ -413,17 +413,6 @@ body {
 	height: 400px;
 }
 
-#loadDisqusBtn{
-            width: 100%;
-            height: 50px;
-            border: 1px solid #dddddd;
-            border-radius: 8px;
-            -moz-border-radius: 8px;
-            text-align: center;
-            background-color: buttonface;
-            color: buttontext;
-}
-
 h2 {
 	border-bottom: 1px solid #cccccc;
 	padding-bottom: 3px;	
@@ -440,3 +429,147 @@ h2 {
     color: #0366d6;
     text-decoration: underline;
 }
+
+
+
+.navbar-custom2 {
+  background: white;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar-custom2 .navbar-brand {
+  font-weight: 800;
+}
+.navbar-custom2 .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.portable-infobox {
+  float:right;
+  clear: right;
+  width:300px;
+  margin: 0 0 15px 15px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background: #f0eaf2;
+}
+
+.portable-infobox .pi-navigation {
+    text-align: center;
+    color: white;
+    background-color: #9C6B98;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.portable-infobox .pi-secondary-font {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 0;
+}
+
+.portable-infobox .pi-item-spacing {
+    padding: 5px 10px;
+}
+
+.portable-infobox .pi-title, .portable-infobox .pi-header {
+    background-color: #692f7b;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.portable-infobox .pi-title {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.pi-image {
+    text-align: center;
+}
+
+.pi-layout-stacked .pi-data {
+    display: block;
+}
+
+.pi-data {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+.pi-data, .pi-group {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.pi-border-color {
+    border-color: #dacbde;
+}
+
+.portable-infobox .pi-data .pi-data-label {
+    font-size: smaller;
+}
+.portable-infobox .pi-data-label {
+    margin-bottom: inherit;
+    margin-top: 0;
+}
+.portable-infobox .pi-data .pi-data-value {
+    text-align: right;
+}
+.pi-layout-stacked .pi-data-value {
+    padding-left: 10px;
+}
+.pi-data-value:not(:first-child) {
+    -ms-flex-preferred-size: 180px;
+    -webkit-flex-basis: 180px;
+    -moz-flex-basis: 180px;
+    flex-basis: 180px;
+    padding-left: 10px;
+}
+.pi-data-value {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 0;
+    word-break: break-word;
+}
+.portable-infobox > .pi-item:last-child {
+    border-bottom: 0;
+}
+
+.article-thumb.tleft {
+    clear: left;
+    float: left;
+    margin-right: 20px;
+}
+.tleft {
+    clear: left;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
