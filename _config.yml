@@ -7,8 +7,8 @@ email: friends@ibtfu.com
 copyright_name: FRIENDS, All Rights Reserved
 #description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: ""
-#url: "http://www.ibtfu.com"
-url: "http://localhost:4000"
+url: "http://www.ibtfu.com"
+#url: "http://localhost:4000"
 twitter_username: SBootstrap
 github_username:  davidtmiller
 facebook_username:  StartBootstrap
