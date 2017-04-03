@@ -69,9 +69,13 @@
 				error: function() {
 					//console.log(x.attr("href")); 
 		  			x.css("color", "red");
+                    x.attr("title", "This topic currently does not exist.");
 				}
 	  		});
 		});
+        $("table.cquote").each(function(){
+            $(this).removeClass("table table-hover");
+        });
 	});
 
 </script>

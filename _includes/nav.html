@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav class="navbar navbar-default navbar-custom2" style="margin-bottom:0;border:none;border-radius:0px;{% if page.bgcolor %}background:#{{ page.bgcolor }};color:#FFFFFF"{% endif %}>
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -9,17 +9,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/" {% if page.bgcolor %}style="color:white"{% endif %}>{{ site.title }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{ site.baseurl }}/">Home</a>
+                    <a href="{{ site.baseurl }}/" {% if page.bgcolor %}style="color:white"{% endif %}>Home</a>
                 </li>
                 <li>
-                    <a href="http://blog.ibtfu.com/" target="_blank">Blog</a>
+                    <a href="http://blog.ibtfu.com/" target="_blank" {% if page.bgcolor %}style="color:white"{% endif %}>Blog</a>
                 </li>
 				{% comment %}
                 {% for page in site.pages %}{% if page.title %}
